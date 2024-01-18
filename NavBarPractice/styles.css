@@ -113,7 +113,7 @@ p{
 .img-slider .slide img{
     z-index: 1;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 .img-slider .slide .info{
     position: absolute;
