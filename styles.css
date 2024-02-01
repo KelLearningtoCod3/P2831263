@@ -1,0 +1,264 @@
+/* https://htmlpreview.github.io/ to preview */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+height: 100vh;
+justify-content: center;
+align-items: center;
+background-color: #2E2E2E;
+}
+
+.NavContainAMZN{
+    background-color: rgba(40, 40, 40, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 80px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding: 20px 0px;
+}
+
+.NavItem{
+    height: auto;
+    list-style: none;
+}
+
+.LogInBtn{
+    height: auto;
+    list-style: none;
+}
+
+.Btn{
+    display: flex;
+    height: 0%;
+}
+
+.navbarlinks{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    padding: 0 1rem;
+    margin: auto; 
+    height: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.navbarlinks:hover{
+    color: #ff9a00;
+    transition: all ease-in-out 0.2s;
+}
+
+#PRIME{
+    color: #fff;
+    font-weight: 600;   
+}
+
+#PRIME:hover {
+    color: #e91efc;
+    transition: all ease-in-out 0.2s;
+}
+
+.AMZNGAMESNAVLIST {
+    display: flex;
+}
+
+.AMZNGAMESNAV {
+    min-height: 73px;
+    max-width: 4000px;
+    min-width: 500px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.AMZNLogo {
+    margin-left: 30px;
+}
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center ;
+}
+
+p{
+    font-family: "Kanit", sans-serif;
+}
+
+.img-slider{
+    position: relative;
+    min-width: 800px;
+    min-height: 500px;
+    max-width: 1920px;
+    background-color: #2E2E2E;
+    
+
+}
+
+.img-slider .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+    min-width: 800px;
+    min-height: 500px;
+    max-width: 1920px;
+    overflow: hidden;
+
+}
+
+.img-slider .slide img{
+    z-index: 1;
+    width: 100%;
+    border-radius: 0px;
+    
+}
+.img-slider .slide .info{
+    position: absolute;
+    bottom: 0;
+    padding: 15px 30px;
+}
+
+.img-slider .slide .info .GameLogo{
+    width: 25%;
+    height: 25%;
+    padding-top: 1vh;
+}
+
+
+.img-slider .slide .info p{
+    color: #fff;
+    background: rgba(255,255, 255, 0.1);
+    font-size: 16px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.img-slider .navigationimgslider {
+    z-index: 2;
+    position: absolute;
+    display: flex; 
+    bottom: 94%;
+    left: 4vw;
+    transform: translateX(-50%);
+    background-color: #2E2E2E;
+    margin: 0 0;
+    border-radius: 0 0 7px 7px;
+}
+
+.img-slider .navbtn {
+    background: rgba(255, 255, 255, 0.5);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.img-slider .slide.active {
+    clip-path: circle(150.0% at 0 50%);
+    transition: 2s all ease-in-out;
+    transition-property: clip-path;
+    min-width: 800px;
+    min-height: 500px;
+    max-width: 1920px;
+    /* Ask Thom how to auto crop */
+    
+}
+
+.img-slider .navbtn.active {
+    background: #ff9a00;
+}
+
+@media (max-width: 820px) {
+    .img-slider{
+        width: 600px;
+        height: 375px;
+    }
+    .img-slider .slide .info{
+        padding: 10px 25px;
+    }
+
+    .img-slider .slide .info p{
+        width: 70%;
+        font-size: 15px; 
+    }
+
+    .img-slider .navigationimgslider{
+        margin: 0 0;
+        border-radius: 0 0 7px 7px;
+        bottom: 94%;
+        left: 4vw;
+    }
+
+    .img-slider .navigationimgslider .navbtn{
+        width: 10px;
+        height: 10px;
+        margin: 8px;
+    }
+}
+@media (max-width: 620px) {
+    .img-slider{
+        width: 400px;
+        height: 250px;
+    }
+    .img-slider .slide .info{
+        padding: 10px 20px;
+    }
+
+    .img-slider .slide .info p{
+        width: 80%;
+        font-size: 13px; 
+    }
+
+    .img-slider .navigationimgslider{
+        margin: 0 0;
+        border-radius: 0 0 7px 7px;
+        bottom: 94%;
+        left: 4vw;
+    }
+
+    .img-slider .navigationimgslider .navbtn{
+        width: 8px;
+        height: 8px;
+        margin: 6px;
+    }
+}
+@media (max-width: 420px) {
+    .img-slider{
+        width: 200px;
+        height: 125px;
+    }
+    .img-slider .slide .info{
+        padding: 5px 15px;
+    }
+
+    .img-slider .slide .info p{
+        width: 90%;
+        font-size: 7px; 
+    }
+
+    .img-slider .navigationimgslider{
+        margin: 0 0;
+        border-radius: 0 0 7px 7px;
+        bottom: 94%;
+        left: 4vw;
+    }
+
+    .img-slider .navigationimgslider .navbtn{
+        width: 6px;
+        height: 6px;
+        margin: 4px;
+    }
+}
